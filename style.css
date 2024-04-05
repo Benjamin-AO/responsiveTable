@@ -31,6 +31,8 @@ h1 {
     border: solid 1px gainsboro;
     border-radius: 25px;
 }
+
+
   
 
 
@@ -47,6 +49,9 @@ h1 {
     background-size: var(--s) var(--s);
 }
 
+.bh-hov:hover {
+    box-shadow: 0 1px 6px 0 #171717;
+}
 
 
 /* ----------------------------- Table ----------------------------- */
@@ -83,6 +88,10 @@ td, th {
 tr:nth-child(even) {
     background-color: #1B1A55;
     scroll-snap-align: start;
+}
+
+tr:hover {
+    box-shadow: 0 1px 6px 0 #171717;
 }
 
 
