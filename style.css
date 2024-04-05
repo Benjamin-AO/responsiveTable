@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #046D8B, #424769, #1B4242 );
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background: linear-gradient(to right, #1B4242, #1B1A55);
+    padding: 50px;
+}
+
+.title-wrapper {
+    background: linear-gradient(to right, #1B1A55, #1B4242 );
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px gainsboro;
+    border-radius: 25px;
+}
+  
+
+
+/* ----------------------------- Background Pattern ----------------------------- */
+
+.html {
+    --s: 150px; /* control the size */
+    
+    --_g: #0000 90deg,#046D8B 0;
+    background:
+      conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
+      conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
+      #1B1A55;
+    background-size: var(--s) var(--s);
+}
+
+
+
+/* ----------------------------- Table ----------------------------- */
+
+table {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.t-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 75%;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+th {
+    background: linear-gradient(to right, #1B4242, #1B1A55);
+    position: sticky;
+    top: 0px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #1B1A55;
+    scroll-snap-align: start;
+}
+
+
+
+/* ----------------------------- Media Query ----------------------------- */
+
+@media (max-width: 650px) {
+
+    th,td {
+        display: block;
+        justify-content: center;
+    }
+}
